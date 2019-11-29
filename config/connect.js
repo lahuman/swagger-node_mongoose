@@ -5,7 +5,6 @@ const logger = require(`${__basedir}/config/winston`);
 
 const models = join(__basedir, 'models');
 
-
 // Bootstrap models
 fs.readdirSync(models)
   .filter(file => ~file.search(/^[^.].*\.js$/))
